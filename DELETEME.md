@@ -7,3 +7,12 @@ Version 1 - Original code w/out user validation
   outputs bill information
  does not support user validation
 
+Version 2 - Improved code w/ input validation
+  requests name
+    requests again if name is empty
+  requests initial reading
+    requests again if negative
+  requests final reading
+    requests again if negative
+    requests again if less than initial
+  outputs bill information
