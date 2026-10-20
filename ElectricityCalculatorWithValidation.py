@@ -16,7 +16,7 @@ while current < previous:
   current = float(input("Please enter current meter reading: "))
   if current < 0:
     print("Reading cannot be negative")
-  elif current < negative:
+  elif current < previous:
     print("Reading cannot be less than previous reading")
 
 consumption = current - previous
