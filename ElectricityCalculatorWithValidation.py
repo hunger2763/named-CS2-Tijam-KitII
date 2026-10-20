@@ -1,18 +1,18 @@
 RATE = 12.90
 name = ""
-while name == "":
+while name.strip() == "":
   name = input("Please enter customer name: ")
   if name == "":
     print("Name cannot be  .")
 
 previous = -1
-while previous < 0:
+while previous.isdigit() < 0:
   previous = float(input("Please enter previous meter reading: "))
   if previous < 0:
     print("Reading cannot be negative")
 
 current = previous - 1
-while current < previous:
+while current.isdigit() < previous:
   current = float(input("Please enter current meter reading: "))
   if current < 0:
     print("Reading cannot be negative")
