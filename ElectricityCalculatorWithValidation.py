@@ -24,4 +24,4 @@ totalBill = consumption * RATE
 
 print("\nCustomer:", name)
 print("Electricity Consumption:", consumption, "kWh")
-print("Total Bill: PHP", round(total_bill, 2))
+print("Total Bill: PHP", round(totalBill, 2))
